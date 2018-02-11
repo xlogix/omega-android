@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+  <ImageView
+      android:id="@+id/widget_background"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:visibility="invisible"
+      />
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:gravity="center_vertical"
+      android:orientation="vertical"
+      focusable="true"
+      >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        >
+
+      <LinearLayout
+          android:id="@+id/back_button"
+          android:layout_width="0px"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:background="@drawable/app_selector"
+          android:clickable="true"
+          android:drawSelectorOnTop="false"
+          android:focusable="true"
+          android:gravity="center_horizontal|center_vertical"
+          android:paddingBottom="5dp"
+          android:paddingTop="5dp"
+          android:visibility="invisible"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_small"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="@string/back_arrow"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/forward_button"
+          android:layout_width="0px"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:background="@drawable/app_selector"
+          android:clickable="true"
+          android:drawSelectorOnTop="false"
+          android:focusable="true"
+          android:gravity="center_horizontal|center_vertical"
+          android:paddingBottom="5dp"
+          android:paddingTop="5dp"
+          android:visibility="invisible"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_small"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="@string/forward_arrow"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+      </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+      <LinearLayout
+          android:id="@+id/app_item_1"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/app_selector"
+          android:clickable="true"
+          android:drawSelectorOnTop="false"
+          android:focusable="true"
+          android:gravity="center_vertical|center_horizontal"
+          android:orientation="vertical"
+          android:visibility="visible"
+          >
+
+        <ImageView
+            android:id="@+id/app_icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/holmes_icon"
+            />
+
+        <TextView
+            android:id="@+id/app_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="@string/waiting"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/app_description_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_small"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="4 mins ago"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            />
+
+      </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+      <LinearLayout
+          android:id="@+id/app_item_2"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/app_selector"
+          android:clickable="true"
+          android:drawSelectorOnTop="false"
+          android:focusable="true"
+          android:gravity="center_vertical|center_horizontal"
+          android:orientation="vertical"
+          android:visibility="invisible"
+          >
+
+        <ImageView
+            android:id="@+id/app_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"
+            />
+
+        <TextView
+            android:id="@+id/app_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="App Title"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/app_description_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_small"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="4 mins ago"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            />
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+      <LinearLayout
+          android:id="@+id/app_item_3"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/app_selector"
+          android:clickable="true"
+          android:drawSelectorOnTop="false"
+          android:focusable="true"
+          android:gravity="center_vertical|center_horizontal"
+          android:orientation="vertical"
+          android:visibility="invisible"
+          >
+
+        <ImageView
+            android:id="@+id/app_icon_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"
+            />
+
+        <TextView
+            android:id="@+id/app_title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="App Title"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/app_description_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_small"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="4 mins ago"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.25"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+      <LinearLayout
+          android:id="@+id/app_item_4"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/app_selector"
+          android:clickable="true"
+          android:drawSelectorOnTop="false"
+          android:focusable="true"
+          android:gravity="center_vertical|center_horizontal"
+          android:orientation="vertical"
+          android:visibility="invisible"
+          >
+
+        <ImageView
+            android:id="@+id/app_icon_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"
+            />
+
+        <TextView
+            android:id="@+id/app_title_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="App Title"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/app_description_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_small"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="4 mins ago"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</FrameLayout>

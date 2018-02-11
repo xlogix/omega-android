@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <PreferenceCategory android:title="@string/basic"/>
+
+  <Preference
+      android:key="@string/apps_to_exclude_preference"
+      android:persistent="false"
+      android:summary="@string/apps_to_exclude_summary"
+      android:title="@string/apps_to_exclude_title"/>
+
+  <Preference
+      android:key="@string/reset_intros_preference"
+      android:persistent="false"
+      android:summary="@string/reset_intros_summary"
+      android:title="@string/reset_intros_title"/>
+
+  <Preference
+      android:key="@string/reset_data_preference"
+      android:persistent="false"
+      android:summary="@string/reset_data_summary"
+      android:title="@string/reset_data_title"/>
+
+  <PreferenceCategory android:title="@string/advanced"/>
+
+  <EditTextPreference
+      android:defaultValue="7"
+      android:key="@string/time_decay_constant_preference"
+      android:persistent="false"
+      android:summary="@string/time_decay_constant_summary"
+      android:title="@string/time_decay_constant_title"/>
+
+  <CheckBoxPreference
+      android:defaultValue="true"
+      android:key="@string/show_notification_preference"
+      android:persistent="true"
+      android:summary="@string/show_notification_summary"
+      android:title="@string/show_notification_title"/>
+
+  <CheckBoxPreference
+      android:defaultValue="true"
+      android:key="@string/enable_icon_caching_preference"
+      android:persistent="true"
+      android:summary="@string/enable_icon_caching_summary"
+      android:title="@string/enable_icon_caching_title"/>
+
+
+</PreferenceScreen>

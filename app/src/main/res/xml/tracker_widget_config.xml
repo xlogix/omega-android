@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:persistent="false">
+
+  <PreferenceCategory android:title="@string/general"/>
+
+  <ListPreference
+      android:defaultValue="@string/sort_type_recently_used"
+      android:entries="@array/sort_type_display_list"
+      android:entryValues="@array/sort_type_list"
+      android:key="@string/sort_type_preference"
+      android:persistent="false"
+      android:summary="@string/sort_type_summary"
+      android:title="@string/sort_type_title"/>
+
+  <CheckBoxPreference
+      android:key="@string/lock_page_preference"
+      android:persistent="false"
+      android:summary="@string/lock_page_summary"
+      android:title="@string/lock_page_title"/>
+
+  <ListPreference
+      android:defaultValue="1"
+      android:enabled="false"
+      android:key="@string/page_number_preference"
+      android:persistent="false"
+      android:summary="@string/page_number_summary"
+      android:title="@string/page_number_title"/>
+
+  <PreferenceCategory android:title="@string/appearance"/>
+
+  <CheckBoxPreference
+      android:key="@string/hide_app_title_preference"
+      android:persistent="false"
+      android:summary="@string/hide_app_title_summary"
+      android:title="@string/hide_app_title_title"/>
+
+
+  <CheckBoxPreference
+      android:key="@string/hide_subtext_preference"
+      android:persistent="false"
+      android:summary="@string/hide_subtext_summary"
+      android:title="@string/hide_subtext_title"/>
+
+  <!-- <CheckBoxPreference android:key="@string/show_background_preference"
+    android:title="@string/show_background_title" android:summary="@string/show_background_summary"
+    android:persistent="false"/> -->
+
+
+  <CheckBoxPreference
+      android:enabled="false"
+      android:key="@string/stretch_to_fill_preference"
+      android:persistent="false"
+      android:summary="@string/stretch_to_fill_summary"
+      android:title="@string/stretch_to_fill_title"/>
+
+
+</PreferenceScreen>

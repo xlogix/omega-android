@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/menu_refresh"
+      android:alphabeticShortcut="@string/refresh"
+      android:icon="@drawable/ic_menu_refresh"
+      android:title="@string/refresh"/>
+
+  <item
+      android:id="@+id/menu_settings"
+      android:alphabeticShortcut="@string/settings"
+      android:icon="@android:drawable/ic_menu_manage"
+      android:title="@string/settings"/>
+
+  <item
+      android:id="@+id/menu_user_guide"
+      android:alphabeticShortcut="@string/user_guide"
+      android:icon="@android:drawable/ic_menu_help"
+      android:title="@string/user_guide"/>
+
+  <item
+      android:id="@+id/menu_about"
+      android:alphabeticShortcut="@string/about"
+      android:icon="@android:drawable/ic_menu_info_details"
+      android:title="@string/about"/>
+
+</menu>
